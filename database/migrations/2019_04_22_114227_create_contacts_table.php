@@ -20,7 +20,7 @@ class CreateContactsTable extends Migration
             $table->string('contact_name');
             $table->string('contact_email');
             $table->string('contact_message');
-            $table->timestamp('contact_date')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('contact_date')->default(DB::raw('CURRENT_TIMESTAMP')); // aujourd'hui par defaut
         });
     }
 

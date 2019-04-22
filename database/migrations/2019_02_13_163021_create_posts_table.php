@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
 
             $table->unsignedInteger('post_author');
-            $table->timestamp('post_date')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('post_date')->default(DB::raw('CURRENT_TIMESTAMP')); // aujourd'hui par defaut
             $table->text('post_content');
             $table->text('post_title');
             $table->string('post_status', 20)->default('publish');
@@ -25,6 +25,7 @@ class CreatePostsTable extends Migration
             $table->string('post_type', 20)->default('article');
             $table->text('post_category')->nullable();
 
+            // liaison de cle etranger
             $table->foreign('post_author')->references('id')->on('users');
 
             $table->timestamps();

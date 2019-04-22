@@ -14,7 +14,8 @@ class Contact extends Model
     
     // protected ​$table ​= ​'contacts'​;
 
-    protected $guarded = [];
+    // tableau pour les champs qui ne doivent pas etre remplis
+    protected $guarded = []; 
 
     public $timestamps = false;
 }

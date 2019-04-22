@@ -16,7 +16,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/{post_name}', 'ArticlesController@show');
 
-Route::get('/contact', 'ContactController@index');
 Route::get('/contact', 'ContactController@create');
 Route::get('contact.list', 'ContactController@show');
-Route::post('contact', 'ContactController@store');
+Route::post('contact', 'ContactController@store'); // quand le bouton submit est clique

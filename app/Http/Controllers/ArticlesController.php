@@ -15,12 +15,12 @@ class ArticlesController extends Controller
 
     public function show($post_name){ 
 
-        //get first post with post_nam == $post_name
+        // get first post with post_nam == $post_name
     	$post = \App\Post::where('post_name', $post_name)->first();
 
+        // get first user with user id == post_author
         $user = \App\User::where('id', $post->post_author)->first();
 
-        // posts/single: no dir posts for now
     	return view('single', compact('post', 'user'));
     }
 }
