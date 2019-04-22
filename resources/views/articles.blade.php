@@ -9,3 +9,5 @@
 @endforeach
 
 @endsection
+
+@section('title', 'Articles')

@@ -11,6 +11,10 @@ class Contact extends Model
      *
      * @var string
      */
-    protected ​$table ​= ​'my_contact'​;
+    
+    // protected ​$table ​= ​'contacts'​;
+
+    protected $guarded = [];
+
     public $timestamps = false;
 }

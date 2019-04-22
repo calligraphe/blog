@@ -11,21 +11,12 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', 'HomeController@index');
-// Route::get('/', function () { $tasks = [
-// 'Aller faire les courses', 'Aller à la gym', 'Dormir'
-// ];
-// return view('welcome',[
-// 'tasks' => $tasks,
-// 'test' => request('title') ]);
-// });
+
 Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/{post_name}', 'ArticlesController@show');
 
 Route::get('/contact', 'ContactController@index');
-Route::get('contact', 'ContactController@create');
+Route::get('/contact', 'ContactController@create');
+Route::get('contact.list', 'ContactController@show');
 Route::post('contact', 'ContactController@store');

@@ -13,3 +13,4 @@
 </ul>
 @endsection
 
+@section('title', 'Welcome')

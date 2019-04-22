@@ -19,7 +19,10 @@
 		<textarea class="form-control {{ $errors->has('contact_message') ? 'is-invalid' : '' }}" name="contact_message" id="contact_message" placeholder="Votre message">{{ old('contact_message') }}</textarea>                            {!! $errors->first('contact_message', '
 		<div class="invalid-feedback" style="color: red;">:message</div></br>') !!}
 	</div>
-	<button type="submit" class="btn btn-secondary" style="background-color: #DADDDF; padding: 15px 32px;">Envoyer !</button>
+	<button type="submit" class="btn btn-secondary" style="background-color: #DADDDF; padding: 15px 32px;">Envoyer !</button></br></br>
+	<p><a href="contact.list" style="text-decoration: underline;">Voir la liste des contacts</a></p>
 </form>
 
 @endsection
+
+@section('title', 'Contact')

@@ -16,12 +16,18 @@ class ContactController extends Controller
     }
 
     public function store(ContactRequest $request) {
-    	$user = new \App\User();
-    	$user->name = $request->input('contact_name');
-    	$user->email = $request->input('contact_email');
-    	$user->password = "123";
-    	// $user->save();
-    	return view('confirm', array( 
-    		'user' => $user));
+    	$contact = new \App\Contact();
+    	$contact->contact_name = $request->input('contact_name');
+    	$contact->contact_email = $request->input('contact_email');
+        $contact->contact_message = $request->input('contact_message');
+    	$contact->save();
+    	return view('confirm', compact('contact'));
+    }
+
+    public function show ()
+    {
+        $contacts = \App\Contact::all();
+
+        return view('contact.contacts', compact('contacts'));
     }
 }
