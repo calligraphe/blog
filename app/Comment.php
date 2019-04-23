@@ -8,6 +8,8 @@ class Comment extends Model
 {
 	protected $table = 'comments';
 
+	protected $guarded = [];
+
     /**
     * Get the comment author 
     */

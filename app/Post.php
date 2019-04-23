@@ -29,4 +29,10 @@ class Post extends Model
     {
         return $this->hasMany('App\Comment', 'post_id');
     }
+
+    // Adds a new comment 
+    public function addComment($comment) 
+    {
+        $this->comments()->create($comment);
+    }
 }

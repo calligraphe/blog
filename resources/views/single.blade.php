@@ -22,5 +22,30 @@
 
 @endif
 
+<style type="text/css">
+	.comment_form {
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+	}
+</style>
+
+<form class="comment_form" method="POST" action="/articles/{{ $post->id }}/comments" class="box">
+		@csrf
+
+		<div class="field">
+			<label class="label" for="description">New Comment</label>
+			<div class="control">
+				<input type="text" class="input" name="content" placeholder="Your Comment" required>
+			</div>
+		</div>
+
+		<div class="field">
+			<div class="control">
+				<button type="submit" class="button is-link">Add Comment</button>
+			</div>
+		</div>
+
+		@include('errors')
+
+	</form>
 
 @endsection
