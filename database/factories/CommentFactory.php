@@ -9,6 +9,6 @@ $factory->define(App\Comment::class, function (Faker $faker) {
         'comment_author' => $faker->randomElement($users),
         'post_id' => $faker->randomElement($posts),
         'content' => $faker->sentence(),
-        'post_date' => now(),
+        'comment_date' => now(),
     ];
 });

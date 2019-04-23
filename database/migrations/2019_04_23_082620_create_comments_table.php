@@ -15,7 +15,7 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamp('post_date')->default(DB::raw('CURRENT_TIMESTAMP')); // aujourd'hui par defaut
+            $table->timestamp('comment_date')->default(DB::raw('CURRENT_TIMESTAMP')); // aujourd'hui par defaut
             $table->unsignedInteger('comment_author');
             $table->unsignedInteger('post_id');
             $table->text('content');
