@@ -21,4 +21,12 @@ class Post extends Model
         // pour le liaison
     	return $this->belongsTo('App\User','post_author');
     }
+
+    /**
+    * Get the post comments' 
+    */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment', 'post_id');
+    }
 }
