@@ -8,11 +8,17 @@ use App\Post;
 
 class ArticlesCommentsController extends Controller
 {
-    public function store(Post $post)
+    public function store(Post $post, $post_id)
     {
-    	$attributes = request()->validate(['content' => 'required|min:3']);
+    	$attribute = request()->validate(['content' => 'required|min:3']);
 
-    	$post->addComment($attributes);
+    	$comment = new \App\Comment([
+    		'comment_author' => \Auth::user()->id,
+    		'post_id' => $post_id,
+    		'content' => $attribute['content']
+    	]);
+
+    	$comment->save();
 
     	return back();
     }

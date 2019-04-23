@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     function index() {
     	$posts = \App\Post::all();
     	return view('articles', array( 

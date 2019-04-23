@@ -23,3 +23,6 @@ Route::post('/articles/{post_id}/comments', 'ArticlesCommentsController@store');
 Route::get('/contact', 'ContactController@create');
 Route::get('contact.list', 'ContactController@show');
 Route::post('contact', 'ContactController@store'); // quand le bouton submit est clique
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,10 +1,9 @@
 @extends('layouts/main')
 
 @section('content')
-<h1>Single article view</h1>
-<h3>Post author: {{ $user->name }}</h3>
-{{ $post->post_content }}
-
+<h3><b>{{ $post->post_title }}</b></h3>
+<b><i>Post author: {{ $user->name }}</i></b></br></br>
+<p>{{ $post->post_content }}</p>
 </br></br>
 
 @if ($post->comments->count())

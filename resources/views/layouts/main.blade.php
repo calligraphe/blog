@@ -15,6 +15,23 @@
 				<li><a href="/">Home</a></li>
 				<li><a href="/articles">Articles</a></li>
 				<li><a href="/contact">Contact</a></li>
+				
+				@guest 
+					<li><a class="nav-link" href="{{ route('login') }}"><b>{{ __('Login') }}</b></a></li>
+					@if (Route::has('register'))
+                        <li><a class="nav-link" href="{{ route('register') }}"><b>{{ __('Register') }}</b></a></li>
+                    @endif
+				@else 
+					<li><a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        <b>{{ __('Logout') }}</b>
+                    </a> </li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+            	@endguest
+                
 			</ul>
 		</div>
 	</div>

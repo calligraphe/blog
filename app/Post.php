@@ -18,7 +18,6 @@ class Post extends Model
     */
     public function author()
     {
-        // pour le liaison
     	return $this->belongsTo('App\User','post_author');
     }
 
@@ -30,9 +29,4 @@ class Post extends Model
         return $this->hasMany('App\Comment', 'post_id');
     }
 
-    // Adds a new comment 
-    public function addComment($comment) 
-    {
-        $this->comments()->create($comment);
-    }
 }

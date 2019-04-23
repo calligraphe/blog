@@ -8,7 +8,7 @@ class Comment extends Model
 {
 	protected $table = 'comments';
 
-	protected $guarded = [];
+	protected $fillable = ['post_id', 'content', 'comment_author'];
 
     /**
     * Get the comment author 
