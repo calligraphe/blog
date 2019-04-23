@@ -26,7 +26,8 @@ class CreatePostsTable extends Migration
             $table->text('post_category')->nullable();
 
             // liaison de cle etranger
-            $table->foreign('post_author')->references('id')->on('users');
+            // est supprime si son auteur est supprime
+            $table->foreign('post_author')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();
         });
