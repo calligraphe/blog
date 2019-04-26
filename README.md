@@ -52,9 +52,9 @@ Now you can view the home page. To get access to other pages, you will need to r
 
 ## Testing
 
-Explain how to run the automated tests for this system
+In website's main page you can access `Articles` page, `Contact` page, and authentification page. Let's start with the first one.
 
-### Break down into end to end tests
+### Articles page
 
 Explain what these tests test and why
 
