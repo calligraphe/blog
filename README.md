@@ -38,7 +38,7 @@ You may want to follow [this guide](https://laravel.com/docs/5.7#installation) t
 
 * For `DB_DATABASE` put the absolute path to the database file, which is in `database` folder. For example
 
-  `/path/to/the/laravel-blog/database/database.sqlite`
+  `/path/to/laravel-blog/database/database.sqlite`
 
 * In your command line interface, run the following command
   
