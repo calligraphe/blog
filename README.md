@@ -64,7 +64,7 @@ Here you can view the full article and the information about it: title, author, 
 
 ### Contact page
 
-This page contains a form for a certain data: name, email address and message. After completing the form and sending the message, you'll be redirected to the confirmation page.
+This page contains a form for a certain data: name, email address and message. After completing the form and sending the message, by clicking `Envoyer!` button, you'll be redirected to the confirmation page.
 
 In the same `Contact` page, there is a link `Voir la liste des contacts`, which redirects to the page with the information of all previous contact requests: name, date, email and message.
 
