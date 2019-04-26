@@ -71,7 +71,7 @@ In the same `Contact` page, there is a link `Voir la liste des contacts`, which 
 
 ## Remarks about the project
 
-At the very beginning the whole concept of Laravel was very confusing for me, especially putting the right pieces of code into the right file. Building the application with this framework required much deeper knowledge in OOP PHP, interaction with database, MVC model, dependecies, and especially the errors. To get that, I finished the [`Laravel 5.7 From Scratch`](https://laracasts.com/series/laravel-from-scratch-2018) course, which is of a very high quality and helped me a lot.
+At the very beginning the whole concept of Laravel was very confusing for me, especially putting the right pieces of code into the right file. Building the application with this framework required much deeper knowledge in OOP PHP, interaction with database, MVC model, dependecies, and especially the errors. To get that, I finished the [Laravel 5.7 From Scratch](https://laracasts.com/series/laravel-from-scratch-2018) course, which is of a very high quality and helped me a lot.
 
 What also helped me in my learning was the following the path, starting from `wep.php` to `xxxController` and so on, to find the source of the problem. Doing that multiple times, gave me a better understanding of the famework logic, and why its efficient.
 
