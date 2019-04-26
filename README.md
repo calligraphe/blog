@@ -52,40 +52,26 @@ Now you can view the home page. To get access to other pages, you will need to r
 
 ## Testing
 
-In website's main page you can access `Articles` page, `Contact` page, and authentification page. Let's start with the first one.
+You are currently at `Home` page, where you can see the titles of the 3 latest articles, which are the link to the full article. But to view those article, or access the `Articles` or `Home` pages, you will need to autheticate, by logging in or registering.
 
 ### Articles page
 
-Explain what these tests test and why
+This page shows the titles of all available posts and IDs of their authors. Clicking the title will redirect you to the page with the single article that you chose to read.
 
-```
-Give an example
-```
+### Single article page
 
-### And coding style tests
+Here you can view the full article and the information about it: title, author, body. This page also contains comments section: the oldest are on top and the latest ones in bottom. There is also a form to add a new comment.
 
-Explain what these tests test and why
+### Contact page
 
-```
-Give an example
-```
+This page contains a form for a certain data: name, email address and message. After completing the form and sending the message, you'll be redirected to the confirmation page.
 
-## Deployment
+In the same `Contact` page, there is a link `Voir la liste des contacts`, which redirects to the page with the information of all previous contact requests: name, date, email and message.
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
+## Remarks about the project
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+At the very beginning the whole concept of Laravel was very confusing for me, especially putting the right pieces of code into the right file. Building the application with this framework required much deeper knowledge in OOP PHP, interaction with database, MVC model, dependecies, and especially the errors. To get that, I finished the [`Laravel 5.7 From Scratch`](https://laracasts.com/series/laravel-from-scratch-2018) course, which is of a very high quality and helped me a lot.
 
-## Authors
+What also helped me in my learning was the following the path, starting from `wep.php` to `xxxController` and so on, to find the source of the problem. Doing that multiple times, gave me a better understanding of the famework logic, and why its efficient.
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
