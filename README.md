@@ -60,7 +60,7 @@ This page shows the titles of all available posts and IDs of their authors. Clic
 
 ### Single article page
 
-Here you can view the full article and the information about it: title, author, body. This page also contains comments section: the oldest are on top and the latest ones in bottom. There is also a form to add a new comment. You can write your comment in the text field and send it by clicking `Add comment` button.
+Here you can view the full article and the information about it: title, author, body. This page also contains comments section: the oldest are on top and the latest ones in bottom. There is also a form to add a new comment. You can write your comment in the text field and send it by clicking `Add comment` button. Your comment will appear under all previous comments.
 
 ### Contact page
 
