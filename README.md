@@ -46,7 +46,7 @@ You may want to follow [this guide](https://laravel.com/docs/5.7#installation) t
 
 * Run `php artisan serve`
 
-* Finally, open your terminal and go to `localhost:8000/`
+* Finally, open your browser and go to `localhost:8000/`
 
 Now you can view the home page. To get access to other pages, you will need to register or log in, using `admin@example.org` as an email address and `admin123` as a password.
 
